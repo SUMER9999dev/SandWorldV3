@@ -32,7 +32,7 @@ def main() -> None:
         if answer is None:  # check if user press ctrl + c
             break
         answer = answer["command"]
-        Functions.get_command(answer.lower()).call(context)  # getting command by name and calling with context
+        answer.call(context)  # getting command by name and calling with context
 
 
 if __name__ == '__main__':
